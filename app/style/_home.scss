@@ -1,0 +1,82 @@
+.homeMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  .bannerContainer {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    .homeBanner {
+      overflow: hidden;
+      width: 100vw;
+      height: auto;
+    }
+  }
+  .mainMessage {
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .mainMsgText {
+      color: white;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      transform: translateX(-50%);
+      text-transform: uppercase;
+      white-space: nowrap;
+      text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+      font-family: "Oswald", sans-serif;
+      hr {
+        width: 100px;
+        color: white;
+      }
+      h1 {
+        font-size: 7em;
+        padding: 0;
+        margin: 0;
+      }
+      h3 {
+        font-size: 2em;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-top: -10px;
+        font-weight: 500;
+      }
+    }
+  }
+  .bodyMain {
+    width: 60vw;
+    margin-left: 100px;
+    margin-top: 50px;
+    overflow: visible;
+    .articleAll {
+      overflow: visible;
+      .articleBody {
+        display: flex;
+        justify-content: space-around;
+        overflow: visible;
+        span {
+          width: 75px;
+          height: 75px;
+          border: 2px solid #000;
+          overflow: visible;
+        }
+        .articleText {
+          margin-left: 20px;
+          overflow: visible;
+          h3 {
+            margin-top: 0;
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

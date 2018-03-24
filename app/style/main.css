@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Oswald|Poppins");
+.homeMain {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .homeMain .bannerContainer {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; }
+    .homeMain .bannerContainer .homeBanner {
+      overflow: hidden;
+      width: 100vw;
+      height: auto; }
+  .homeMain .mainMessage {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh; }
+    .homeMain .mainMessage .mainMsgText {
+      color: white;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      transform: translateX(-50%);
+      text-transform: uppercase;
+      white-space: nowrap;
+      text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+      font-family: "Oswald", sans-serif; }
+      .homeMain .mainMessage .mainMsgText hr {
+        width: 100px;
+        color: white; }
+      .homeMain .mainMessage .mainMsgText h1 {
+        font-size: 7em;
+        padding: 0;
+        margin: 0; }
+      .homeMain .mainMessage .mainMsgText h3 {
+        font-size: 2em;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-top: -10px;
+        font-weight: 500; }
+  .homeMain .bodyMain {
+    width: 60vw;
+    margin-left: 100px;
+    margin-top: 50px;
+    overflow: visible; }
+    .homeMain .bodyMain .articleAll {
+      overflow: visible; }
+      .homeMain .bodyMain .articleAll .articleBody {
+        display: flex;
+        justify-content: space-around;
+        overflow: visible; }
+        .homeMain .bodyMain .articleAll .articleBody span {
+          width: 75px;
+          height: 75px;
+          border: 2px solid #000;
+          overflow: visible; }
+        .homeMain .bodyMain .articleAll .articleBody .articleText {
+          margin-left: 20px;
+          overflow: visible; }
+          .homeMain .bodyMain .articleAll .articleBody .articleText h3 {
+            margin-top: 0;
+            padding-top: 0; }
+
+* {
+  overflow-x: hidden; }
+
+nav {
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+  font-family: "Oswald", sans-serif; }
+  nav .navLogo {
+    margin-left: 75px;
+    overflow: hidden;
+    display: flex; }
+    nav .navLogo img {
+      width: 35px;
+      height: 35px;
+      margin: 0;
+      padding: 0;
+      margin-top: 5px; }
+    nav .navLogo p {
+      color: #eee;
+      font-weight: bolder;
+      white-space: nowrap;
+      overflow: visible;
+      padding: 0;
+      margin: 0;
+      margin-left: 7px;
+      margin-top: 12px;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif; }
+      nav .navLogo p span {
+        margin: 0;
+        padding: 0;
+        margin-left: -7px; }
+  nav .navLinkLists {
+    display: flex; }
+    nav .navLinkLists ul {
+      overflow: hidden;
+      margin: 0; }
+      nav .navLinkLists ul li {
+        display: inline-block;
+        list-style: none;
+        color: #eee;
+        padding: 0 10px 10px 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold; }
+    nav .navLinkLists .navLinks {
+      margin-right: 25px;
+      font-size: 1.075em;
+      margin-top: 10px; }
+    nav .navLinkLists .socialIcons {
+      margin-right: 75px;
+      margin-top: 15px; }
+
+/*# sourceMappingURL=main.css.map */
