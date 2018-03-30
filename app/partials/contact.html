@@ -1,0 +1,21 @@
+<div class="contactMain">
+    <h1>Contact Us</h1>
+    <p>Do proident aliquip mollit velit laboris laboris exercitation excepteur excepteur.</p>
+    <form name="contactForm" ng-submit="" novalidate>
+        <div class="labels">
+            <p data-id="name">Your full name</p>
+            <p data-id="email">Your email</p>
+            <p data-id="message">Message</p>
+        </div>
+        <div class="inputs">
+            <input id="userName" class="formInput" type="text" ng-model="$ctrl.user.name" placeholder="John Doe">
+            <input id="userEmail" class="formInput" type="email" ng-model="$ctrl.user.email" placeholder="example@email.com">
+            <textarea id="userMessage" class="formInput" rows="5" ng-model="$ctrl.user.msg" placeholder="Tell us about blah blah blah"></textarea>
+            <button>
+                <span id="lock">
+                    <i class="material-icons">lock_outline</i>
+                </span>
+            </button>
+        </div>
+    </form>
+</div>

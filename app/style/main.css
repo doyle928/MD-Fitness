@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis|Oswald|Poppins");
+@import url("https://fonts.googleapis.com/css?family=Dosis|Orbitron|Oswald|Poppins");
 .homeMain {
   position: absolute;
   top: 0;
@@ -6,19 +6,20 @@
   .homeMain .bannerContainer {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    z-index: -1; }
+    z-index: -1;
+    overflow: hidden; }
     .homeMain .bannerContainer .homeBanner {
-      overflow: hidden;
       width: 100vw;
-      height: auto; }
+      height: auto;
+      overflow: hidden; }
   .homeMain .mainMessage {
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     left: 0;
     top: 0;
     width: 100vw;
-    height: 100vh; }
+    height: 100vh;
+    overflow-x: hidden; }
     .homeMain .mainMessage .mainMsgText {
       color: white;
       position: absolute;
@@ -34,11 +35,11 @@
         width: 100px;
         color: white; }
       .homeMain .mainMessage .mainMsgText h1 {
-        font-size: 7em;
+        font-size: 5em;
         padding: 0;
         margin: 0; }
       .homeMain .mainMessage .mainMsgText h3 {
-        font-size: 2em;
+        font-size: 1.75em;
         text-align: center;
         padding: 0;
         margin: 0;
@@ -47,27 +48,84 @@
   .homeMain .bodyMain {
     width: 60vw;
     margin-left: 100px;
-    margin-top: 50px;
-    overflow: visible; }
-    .homeMain .bodyMain .articleAll {
-      overflow: visible; }
-      .homeMain .bodyMain .articleAll .articleBody {
-        display: flex;
-        justify-content: space-around;
-        overflow: visible; }
-        .homeMain .bodyMain .articleAll .articleBody span {
-          width: 75px;
-          height: 75px;
-          border: 2px solid #000;
-          overflow: visible; }
-        .homeMain .bodyMain .articleAll .articleBody .articleText {
-          margin-left: 20px;
-          overflow: visible; }
-          .homeMain .bodyMain .articleAll .articleBody .articleText h3 {
-            margin-top: 0;
-            padding-top: 0; }
+    margin-top: 50px; }
+    .homeMain .bodyMain .articleAll .articleBody {
+      display: flex;
+      justify-content: space-around; }
+      .homeMain .bodyMain .articleAll .articleBody span {
+        width: 75px;
+        height: 75px;
+        border: 2px solid #000; }
+      .homeMain .bodyMain .articleAll .articleBody .articleText {
+        margin-left: 20px; }
+        .homeMain .bodyMain .articleAll .articleBody .articleText h3 {
+          margin-top: 0;
+          padding-top: 0; }
+
+.contactMain {
+  margin-top: 75px;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold; }
+  .contactMain h1 {
+    font-family: "Oswald", sans-serif; }
+  .contactMain form {
+    width: 450px;
+    padding: 30px;
+    margin: 30px 0 0 75px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); }
+    .contactMain form .labels p {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 27px;
+      margin-top: 8px;
+      font-size: 1em;
+      text-align: left; }
+    .contactMain form .inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      outline: none; }
+      .contactMain form .inputs input,
+      .contactMain form .inputs textarea {
+        width: 300px;
+        background-color: #f0f0f0;
+        padding: 9px;
+        margin-bottom: 8px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        font-size: 1em;
+        outline: none; }
+      .contactMain form .inputs textarea {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+      .contactMain form .inputs button {
+        width: 100px;
+        height: 37px;
+        margin-top: 5px;
+        float: right;
+        background-color: darkblue;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold; }
+        .contactMain form .inputs button span i {
+          font-size: 24px;
+          padding: 0;
+          margin: 0 auto; }
+        .contactMain form .inputs button span p {
+          margin: 0 auto;
+          padding: 0;
+          text-transform: uppercase;
+          font-weight: bold; }
 
 * {
+  cursor: default; }
+
+body {
   overflow-x: hidden; }
 
 nav {
@@ -82,10 +140,10 @@ nav {
   display: flex;
   justify-content: space-between;
   text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Oswald", sans-serif;
+  overflow-x: hidden; }
   nav .navLogo {
     margin-left: 75px;
-    overflow: hidden;
     display: flex; }
     nav .navLogo img {
       width: 35px;
@@ -95,23 +153,24 @@ nav {
       margin-top: 5px; }
     nav .navLogo p {
       color: #eee;
-      font-weight: bolder;
+      font-weight: 900;
       white-space: nowrap;
-      overflow: visible;
       padding: 0;
       margin: 0;
       margin-left: 7px;
-      margin-top: 12px;
+      margin-top: 10px;
       text-transform: uppercase;
-      font-family: "Poppins", sans-serif; }
+      font-family: "Orbitron", sans-serif;
+      font-size: 24px; }
       nav .navLogo p span {
+        display: inline-block;
         margin: 0;
         padding: 0;
-        margin-left: -7px; }
+        transform: translateY(-4px);
+        text-transform: lowercase; }
   nav .navLinkLists {
     display: flex; }
     nav .navLinkLists ul {
-      overflow: hidden;
       margin: 0; }
       nav .navLinkLists ul li {
         display: inline-block;
@@ -128,5 +187,11 @@ nav {
     nav .navLinkLists .socialIcons {
       margin-right: 75px;
       margin-top: 15px; }
+      nav .navLinkLists .socialIcons svg,
+      nav .navLinkLists .socialIcons i {
+        cursor: pointer; }
+        nav .navLinkLists .socialIcons svg rect,
+        nav .navLinkLists .socialIcons i rect {
+          cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

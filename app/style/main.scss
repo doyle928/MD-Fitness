@@ -1,11 +1,14 @@
 @import "home";
-@import url("https://fonts.googleapis.com/css?family=Dosis|Oswald|Poppins");
-
+@import "contact";
+@import url("https://fonts.googleapis.com/css?family=Dosis|Orbitron|Oswald|Poppins");
 // font-family: 'Oswald', sans-serif;
 // font-family: 'Poppins', sans-serif;
 // font-family: 'Dosis', sans-serif;
 
 * {
+  cursor: default;
+}
+body {
   overflow-x: hidden;
 }
 nav {
@@ -21,9 +24,9 @@ nav {
   justify-content: space-between;
   text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
   font-family: "Oswald", sans-serif;
+  overflow-x: hidden;
   .navLogo {
     margin-left: 75px;
-    overflow: hidden;
     display: flex;
     img {
       width: 35px;
@@ -34,26 +37,28 @@ nav {
     }
     p {
       color: #eee;
-      font-weight: bolder;
+      font-weight: 900;
       white-space: nowrap;
-      overflow: visible;
+
       padding: 0;
       margin: 0;
       margin-left: 7px;
-      margin-top: 12px;
+      margin-top: 10px;
       text-transform: uppercase;
-      font-family: "Poppins", sans-serif;
+      font-family: "Orbitron", sans-serif;
+      font-size: 24px;
       span {
+        display: inline-block;
         margin: 0;
         padding: 0;
-        margin-left: -7px;
+        transform: translateY(-4px);
+        text-transform: lowercase;
       }
     }
   }
   .navLinkLists {
     display: flex;
     ul {
-      overflow: hidden;
       margin: 0;
       // float: right;
       li {
@@ -75,6 +80,13 @@ nav {
       margin-right: 75px;
       margin-top: 15px;
       // float: right;
+      svg,
+      i {
+        cursor: pointer;
+        rect {
+          cursor: pointer;
+        }
+      }
     }
   }
 }

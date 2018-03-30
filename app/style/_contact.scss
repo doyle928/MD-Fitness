@@ -1,0 +1,75 @@
+.contactMain {
+  margin-top: 75px;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  h1 {
+    font-family: "Oswald", sans-serif;
+  }
+  form {
+    width: 450px;
+    padding: 30px;
+    margin: 30px 0 0 75px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 10px 20px rgba($color: #000, $alpha: 0.25);
+    .labels {
+      p {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 27px;
+        margin-top: 8px;
+        font-size: 1em;
+        text-align: left;
+      }
+    }
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      outline: none;
+      input,
+      textarea {
+        width: 300px;
+        color: #616161;
+        background-color: rgb(240, 240, 240);
+        padding: 9px;
+        margin-bottom: 8px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        font-size: 1em;
+        outline: none;
+      }
+      textarea {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      button {
+        width: 100px;
+        height: 37px;
+        margin-top: 5px;
+        float: right;
+        background-color: darkblue;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba($color: #000, $alpha: 0.2);
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        span {
+          i {
+            font-size: 24px;
+            padding: 0;
+            margin: 0 auto;
+          }
+          p {
+            margin: 0 auto;
+            padding: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

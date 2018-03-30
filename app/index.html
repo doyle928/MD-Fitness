@@ -4,23 +4,24 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MD Fitness</title>
+    <title>Youth Sport Performance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body ng-app="app">
+<body ng-app="app" ng-controller="mainController">
     <nav>
         <div class="navLogo">
             <img src="style/images/brawn.svg">
-            <p>M
-                <span>D</span> Fitness</p>
+            <p>
+                <span>y</span>SP</p>
         </div>
         <div class="navLinkLists">
             <ul class="navLinks">
-                <li class="home">Home</li>
-                <li class="articles">Articles</li>
-                <li class="contact">Contact</li>
+                <li class="home" ng-click="home()">Home</li>
+                <li class="articles" ng-click="articles()">Articles</li>
+                <li class="contact" ng-click="contact()">Contact</li>
             </ul>
             <ul class="socialIcons">
                 <li>
@@ -36,8 +37,12 @@
         </div>
     </nav>
 
-    <ng-view></ng-view>
+    <div ng-view class="view-animate"></div>
 
+    <div class="fillSpace"></div>
+    <footer></footer>
+
+    <script src="js/main.js"></script>
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script src="js/assets/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.6.7/angular-route.js"></script>
@@ -45,6 +50,7 @@
     <script src="js/module.js"></script>
     <script src="js/config.js"></script>
     <script src="js/components/home.component.js"></script>
+    <Script src="js/components/contact.component.js"></Script>
     <script>
         feather.replace()
     </script>
